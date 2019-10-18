@@ -1,0 +1,17 @@
+.button__edit {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 38px;
+    height: 18px;
+    font-size: 12px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 168px;
+    left: 187px;
+}
+
+.button__edit:focus {
+    outline-color: greenyellow;
+  }

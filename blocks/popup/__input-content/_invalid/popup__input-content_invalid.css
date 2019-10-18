@@ -1,0 +1,7 @@
+.popup__input-content_invalid {
+    margin-bottom: 15px;
+}
+
+.popup__input-content_invalid:last-of-type {
+    margin-bottom: 0;
+  }

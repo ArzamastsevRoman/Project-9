@@ -1,0 +1,6 @@
+.popup__content-image {
+    
+    min-width: 10vw;
+    min-height: 10vh;
+    position: relative;
+}

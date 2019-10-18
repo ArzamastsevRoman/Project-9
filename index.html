@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+    </header>
+    <div class="profile root__section">
+      <div class="user-info">
+        <div class="user-info__photo"></div>
+        <div class="user-info__data">
+          <h1 class="user-info__name"></h1>
+          <p class="user-info__job"></p>
+        </div>
+        <button class="button user-info__button">+</button>
+        <button class = "button__edit">Edit</button>
+      </div>
+    </div>
+    <div class="places-list root__section">
+    </div>
+    <div class="popup">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="new">
+          <div class="popup__input-content">
+            <input id="title" type="text" name="name" required minlength = '2' maxlength = '30'  class="popup__input popup__input_type_name" placeholder="Название">
+            <span id = "error__title" class="popup__error" aria-live = 'polite'></span>
+          </div>
+          <div class="popup__input-content">
+            <input id="link" type="url" name="link" required class="popup__input popup__input_type_link-url" placeholder="Ссылка на картинку">
+            <span id = "error__link" class="popup__error" aria-live = 'polite'></span>
+          </div>
+          <button type class="button popup__button">+</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup" id = "edit">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close" id = "edit-close">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form class="popup__form" name="edit" id = "popupFormEdit">
+          <div class="popup__input-content">
+            <input id = "name" type="text" name="name" required minlength = '2' maxlength = '30' class="popup__input popup__input_type_name" placeholder="Имя">
+            <span id = "error__name" class="popup__error" aria-live = 'polite'></span>
+          </div>
+          <div class="popup__input-content">
+            <input id = "about" type="text" name="about" required minlength = '2' maxlength = '30' class="popup__input popup__input_type_link-url" placeholder="О себе">
+            <span id = "error__about" class="popup__error" aria-live = 'polite'></span>
+          </div>
+            <button type class="button popup__button-edit">Сохранить</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup__image">
+      <div class="popup__content-image">
+        <img src="" alt="" class="popup__image-link">
+        <img src="./images/close.svg" alt="" class="popup__close" id = "image-close">
+      </div>
+    </div>
+  </div>
+  <script src = "pages/index.js"></script>
+</body>
+</html>

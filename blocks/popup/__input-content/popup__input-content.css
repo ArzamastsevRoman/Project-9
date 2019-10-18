@@ -1,0 +1,9 @@
+@import url(./_invalid/popup__input-content_invalid.css);
+
+.popup__input-content {
+    margin-bottom: 30px;
+}
+
+.popup__input-content:last-of-type {
+    margin-bottom: 0;
+  }

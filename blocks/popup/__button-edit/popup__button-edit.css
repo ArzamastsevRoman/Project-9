@@ -1,0 +1,10 @@
+@import url('_disable/button__button-edit_disable.css');
+
+.popup__button-edit {
+    width: 100%;
+    height: 50px;
+    margin-top: 48px;
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    font-size: 18px;
+  }
